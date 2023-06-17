@@ -1,0 +1,249 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Pangolin', cursive;
+font-family: 'Playfair', serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+}
+header{
+    width: 100 mv;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row: 1fr;
+    background-image: url("../Img/47276c6b-abf1-47ce-9c0f-3ed4f377e439.jpg");
+}    
+.navheader{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    align-items:center;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    
+}
+main{
+    background-color: black;
+}
+
+footer{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: rgb(177, 133, 21);
+    padding-bottom: 5px;
+   
+}
+
+.p_footer{
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+/*media footer*/
+@media(max-width:332px){
+   .div-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+   }
+}
+
+p{
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: large;
+}
+ul{
+    color: aliceblue;
+}
+section{
+    background-color: black;
+}
+
+.section-index{
+    width: 100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+
+.section-info{
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr ;
+    grid-template-rows: 4fr 4fr;
+    row-gap: 10px;  
+    column-gap: 2px; 
+    overflow: hidden;
+    padding-bottom: 10px;
+    justify-items: center;
+    align-items: center;
+
+ }
+
+.imginicio_mobile{
+    display:none
+}
+
+/*media index*/
+@media(max-width:676px){
+   section div{
+    .imginicio_desktop{
+        display: none;
+    }
+
+    .imginicio_mobile{
+        display: block;
+    }
+}
+} 
+.p_tour{
+    padding-bottom: 15px;
+}
+
+.img_tour{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/*media tour*/
+@media(max-width:800px){
+   
+    .img-tour-mobile{
+        display: block;
+        overflow: hidden;
+    }
+}
+
+.iframe_disc_desktop{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*media discografia*/
+@media(max-width:1050px){
+    .iframe_disc_desktop{
+    justify-content:center;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+ .img-tour-mobile{
+    overflow: hidden;
+    display: block;
+}
+.img-tour-desktop{
+    display: none;
+}
+}
+
+
+/*media informacion*/
+
+@media(max-width:754px){
+    .img_info_desktop{
+        display: none;
+    }
+    .img_info_mobile{
+        display: block;
+    }
+    .img_info_mobile2{
+        display: block;
+    }
+}
+
+@media(max-width:750px){
+    .section-info{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+    }
+
+    .img_info_mobile{
+        display:block;
+    }
+    .img_info_mobile2{
+        display: none;
+    }
+
+}
+@media(max-width:503px){
+    .section-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+    .img_info_mobile{
+        display:block;
+    }
+    .img_info_mobile2{
+        display: none;
+    }
+
+}
+.img_film{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.link_film2{
+    display: none;
+}
+/*media filmografia*/ 
+@media(max-width:600px){
+    .link_film{
+        display: none;
+    }
+    .link_film2{
+        display: block;
+    }
+    .portada_film{
+        display: block;
+        height: 200px;
+        width: 150px;
+    }
+
+
+}
+    
