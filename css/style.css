@@ -165,15 +165,14 @@ section{
     flex-wrap: wrap;
     align-items: center;
     }
- .img-tour-mobile{
+}
+.img-tour-mobile{
     overflow: hidden;
     display: block;
 }
 .img-tour-desktop{
     display: none;
 }
-}
-
 
 /*media informacion*/
 
