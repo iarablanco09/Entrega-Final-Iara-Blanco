@@ -11,6 +11,10 @@ font-family: 'Playfair', serif;*/
     text-decoration: none;
     list-style-type: none;
 }
+::selection {
+    background-color: black;
+    color: violet;
+}
 
 h1{
     color: aliceblue;
