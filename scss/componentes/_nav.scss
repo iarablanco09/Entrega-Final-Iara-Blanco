@@ -1,0 +1,8 @@
+.navheader{
+    display: nth($dspl, 1);
+    text-align: $txtali;
+    justify-content:nth($just, 3);
+    align-items:$algitms;
+    font-family:nth($fontfam,2);
+    font-weight:nth($fontw,2 );
+  }

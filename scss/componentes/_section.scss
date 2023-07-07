@@ -1,0 +1,17 @@
+.section-info{
+    grid-template-columns:2fr 2fr 2fr ;
+    grid-template-rows: 4fr 4fr;
+    row-gap: 10px;  
+    column-gap: 2px; 
+    overflow: hidden;
+    padding-bottom: 10px;
+    @extend %grid;
+ }
+.section-index{
+    width: 100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,23 @@
+footer{
+    display: map-get($footer-general, dsp);
+    align-items: map-get($footer-general, alitms);
+    justify-content: map-get($footer-general, justcn);
+    background-color: map-get($footer-general, bgclr);
+    padding-bottom: map-get($footer-general, pdbott);
+    .p_footer{
+        font-family: nth($fontfam,2);
+        font-weight: nth($fontw, 3);
+    }
+    
+    @media(max-width:332px){
+    .div-footer{
+     display:nth($dspl,2) ;
+     grid-template-columns: nth($grtempcol,1) ;
+     grid-template-rows:nth($grtemprow, 2);
+     row-gap:$rowgap;
+     justify-items:nth($just,1);
+     align-items: $algitms;}
+    }
+    
+}
+

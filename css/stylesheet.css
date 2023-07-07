@@ -1,3 +1,198 @@
+.img_film, .section-info {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(177, 133, 21);
+  padding-bottom: 5px;
+}
+footer .p_footer {
+  font-family: "Lora" serif;
+  font-weight: 600;
+}
+@media (max-width: 332px) {
+  footer .div-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+header {
+  width: 100mv;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr;
+  background-image: url("../Img/47276c6b-abf1-47ce-9c0f-3ed4f377e439.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+*::selection {
+  background-color: black;
+  color: rgb(148, 15, 148);
+}
+
+main, section {
+  background-color: black;
+}
+
+a, p, ul {
+  color: aliceblue;
+}
+
+p {
+  display: flex;
+  text-align: center;
+  font-family: "Inter" sans-serif;
+  font-weight: 200;
+  font-size: large;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  font-family: "Lora" serif;
+  font-weight: 600;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-family: "Lora" serif;
+  font-weight: 400;
+}
+
+.section-info {
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 4fr 4fr;
+  row-gap: 10px;
+  column-gap: 2px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.section-index {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.navheader {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lora" serif;
+  font-weight: 400;
+}
+
+.img_film {
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr;
+  overflow: hidden;
+}
+
+.link_film2 {
+  display: none;
+}
+
+/*media filmografia*/
+@media (max-width: 600px) {
+  .link_film {
+    display: none;
+  }
+  .link_film2 {
+    display: block;
+  }
+  .portada_film {
+    display: block;
+    height: 200px;
+    width: 150px;
+  }
+}
+.imginicio_mobile {
+  display: none;
+}
+
+/*media index*/
+@media (max-width: 676px) {
+  section div .imginicio_desktop {
+    display: none;
+  }
+  section div .imginicio_mobile {
+    display: block;
+  }
+}
+/*media informacion*/
+@media (max-width: 754px) {
+  .img_info_desktop {
+    display: none;
+  }
+  .img_info_mobile {
+    display: block;
+  }
+  .img_info_mobile2 {
+    display: block;
+  }
+}
+@media (max-width: 750px) {
+  .section-info {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+  }
+  .img_info_mobile {
+    display: block;
+  }
+  .img_info_mobile2 {
+    display: none;
+  }
+}
+@media (max-width: 503px) {
+  .section-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .img_info_mobile {
+    display: block;
+  }
+  .img_info_mobile2 {
+    display: none;
+  }
+}
+.iframe_disc_desktop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*media discografia*/
+@media (max-width: 1050px) {
+  .iframe_disc_desktop {
+    justify-content: center;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 
 /*# sourceMappingURL=stylesheet.css.map */

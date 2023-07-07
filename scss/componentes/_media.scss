@@ -1,0 +1,105 @@
+.img_film{
+    grid-template-columns: nth($grtempcol, 3);
+    grid-template-rows: nth($grtemprow, 6);
+    overflow: $over;
+    @extend %grid;
+} 
+.link_film2{
+    display: nth($dspl, 3 );
+} 
+/*media filmografia*/ 
+@media(max-width:nth($width,3)){
+    .link_film{
+        display: nth($dspl,3);
+    }
+    .link_film2{
+        display: nth($dspl,4);
+    }
+    .portada_film{
+        display: nth($dspl,4);
+        height: $hgt;
+        width: nth($width, 2 );
+    }
+
+}
+
+.imginicio_mobile{
+    display:nth($dspl, 3 )
+}
+
+/*media index*/
+@media(max-width:nth($width,4)){
+    section{
+        div{
+           .imginicio_desktop{
+             display: nth($dspl ,3);
+            }
+            .imginicio_mobile{
+                display: nth($dspl,4 );
+            }
+        
+        }
+    }
+}
+
+/*media informacion*/
+
+@media(max-width: nth($width,5)){
+    .img_info_desktop{
+        display: nth($dspl, 3);
+    }
+    .img_info_mobile{
+        display: nth($dspl,4);
+    }
+    .img_info_mobile2{
+        display: nth($dspl,4);
+    }
+}
+
+@media(max-width:nth($width,6)){
+    .section-info{
+        display: nth($dspl, 2 );
+        grid-template-columns:nth($grtempcol, 3 );
+        grid-template-rows: nth($grtemprow, 4 )
+    }
+
+    .img_info_mobile{
+        display:nth($dspl, 4 );
+    }
+    .img_info_mobile2{
+        display: nth($dspl, 3);
+    }
+
+}
+@media(max-width:nth($width,7)){
+    .section-info{
+        display: nth($dspl, 2);
+        grid-template-columns: nth($grtempcol, 4);
+        grid-template-rows: nth($grtemprow, 5) ;
+    }
+    .img_info_mobile{
+        display:nth($dspl, 4);
+    }
+    .img_info_mobile2{
+        display:nth($dspl, 3) ;
+    }
+
+}
+
+.iframe_disc_desktop{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*media discografia*/
+@media(max-width:nth($width, 8)){
+    .iframe_disc_desktop{
+    justify-content:nth($just, 1 );
+    column-gap:$colgp;
+    flex-wrap: $flxwrp;
+    align-items: $algitms;
+    }
+}
+

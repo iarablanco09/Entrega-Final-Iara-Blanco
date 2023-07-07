@@ -1,0 +1,36 @@
+*{
+    margin: $mrg;
+    padding: $padd;
+    text-decoration: none;
+    list-style-type: none; 
+    &::selection {
+    background-color: nth($color,3);
+    color: nth($color, 1);
+}
+}
+main, section{
+    background-color: nth($color, 3);
+}
+a,p,ul{
+    color:nth($color, 2);
+}
+p{
+    display:nth($dspl, 1);
+    text-align:$txtali;
+    font-family:nth($fontfam, 1);
+    font-weight:nth($fontw, 1);
+    font-size:$fonts;
+}
+h1{
+    color:nth($color, 2);
+    text-align:$txtali;
+    font-family:nth($fontfam, 2);
+    font-weight: nth($fontw, 3);
+}
+h2{
+    display:nth($dspl, 1);
+    justify-content: nth($just, 1);
+    color: nth($color, 2);
+    font-family: nth($fontfam, 2);
+    font-weight: nth($fontw, 2 );
+}
