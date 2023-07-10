@@ -12,8 +12,7 @@ footer{
     @media(max-width:332px){
     .div-footer{
      display:nth($dspl,2) ;
-     grid-template-columns: nth($grtempcol,1) ;
-     grid-template-rows:nth($grtemprow, 2);
+     @include gridcolrow( 1fr 1fr, 1fr 1fr);
      row-gap:$rowgap;
      justify-items:nth($just,1);
      align-items: $algitms;}

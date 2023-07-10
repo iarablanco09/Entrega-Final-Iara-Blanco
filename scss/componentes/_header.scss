@@ -1,8 +1,7 @@
 header{
     width: nth($width, 1);
     display: nth($dspl, 2);
-    grid-template-columns:nth($grtempcol,1 ) ;
-    grid-row: nth($grtemprow, 1 );
+    @include gridcolrow(1fr 1fr,1fr);
     background-image: url("../Img/47276c6b-abf1-47ce-9c0f-3ed4f377e439.jpg");
 }  
   

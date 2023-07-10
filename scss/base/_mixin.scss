@@ -1,0 +1,4 @@
+@mixin gridcolrow($grcol, $grrow){
+    grid-auto-columns:$grcol;
+    grid-template-rows:$grrow;
+}
