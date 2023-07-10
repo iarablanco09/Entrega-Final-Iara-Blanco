@@ -9,7 +9,7 @@ footer{
         font-weight: nth($fontw, 3);
     }
     
-    @media(max-width:332px){
+    @media(max-width: nth($width,10)){
     .div-footer{
      display:nth($dspl,2) ;
      @include gridcolrow( 1fr 1fr, 1fr 1fr);

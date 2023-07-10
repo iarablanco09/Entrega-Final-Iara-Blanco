@@ -1,8 +1,8 @@
 *{
     margin: $mrg;
     padding: $padd;
-    text-decoration: none;
-    list-style-type: none; 
+    text-decoration: $txtdec;
+    list-style-type: $listtp; 
     &::selection {
     background-color: nth($color,3);
     color: nth($color, 1);
