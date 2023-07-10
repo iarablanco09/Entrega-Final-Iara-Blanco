@@ -230,7 +230,6 @@ h2 {
 
 .img-tour-mobile {
   display: block;
-  overflow: hidden;
 }
 
 @media (max-width: 987px) {

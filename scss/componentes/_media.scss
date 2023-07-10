@@ -136,7 +136,6 @@
 }
 .img-tour-mobile{
     display: nth($dspl, 4);
-    overflow: $over;
 }
 @media(max-width:987px){
     .img-tour-mobile{
