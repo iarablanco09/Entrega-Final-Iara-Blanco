@@ -128,22 +128,23 @@
     align-items: $algitms;
     padding-bottom: nth($botpadd, 2 );
     column-gap: nth($colgp,3);
- 
+    overflow:$over;
 }
 .img-tour-desk{
     display: nth($dspl, 4 );
-
 }
 .img-tour-mobile{
     display: nth($dspl, 4);
 }
-@media(max-width:987px){
+@media(max-width:nth($width,11)){
     .img-tour-mobile{
-        display: nth($dspl, 4);
+     display: nth($dspl, 4);
     }
     .img-tour-desk{
-        display:nth($dspl, 3 );
+     display:nth($dspl, 3 );
     }
+    
+        
 
 }
 

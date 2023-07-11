@@ -222,6 +222,7 @@ h2 {
   align-items: center;
   padding-bottom: 10px;
   column-gap: 10px;
+  overflow: hidden;
 }
 
 .img-tour-desk {
