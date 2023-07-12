@@ -152,6 +152,9 @@ section{
         display: block;
         overflow: hidden;
     }
+    .img-tour-desktop{
+        display: none;
+    }
 }
 
 .iframe_disc_desktop{
@@ -169,13 +172,6 @@ section{
     flex-wrap: wrap;
     align-items: center;
     }
-}
-.img-tour-mobile{
-    overflow: hidden;
-    display: block;
-}
-.img-tour-desktop{
-    /* display: none; */
 }
 
 /*media informacion*/

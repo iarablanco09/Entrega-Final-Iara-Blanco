@@ -18,7 +18,7 @@ footer .p_footer {
 @media (max-width: 332px) {
   footer .div-footer {
     display: grid;
-    grid-auto-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
     justify-items: center;
@@ -27,9 +27,9 @@ footer .p_footer {
 }
 
 header {
-  width: 100mv;
+  width: 100mw;
   display: grid;
-  grid-auto-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   background-image: url("../Img/47276c6b-abf1-47ce-9c0f-3ed4f377e439.jpg");
 }
@@ -77,7 +77,7 @@ h2 {
 }
 
 .section-info {
-  grid-auto-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 4fr 4fr;
   row-gap: 10px;
   column-gap: 2px;
@@ -86,7 +86,7 @@ h2 {
 }
 
 .section-index {
-  width: 100mv;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,7 @@ h2 {
 }
 
 .img_film {
-  grid-auto-columns: 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 2fr;
   overflow: hidden;
 }
@@ -142,7 +142,7 @@ h2 {
 @media (max-width: 750px) {
   .section-info {
     display: grid;
-    grid-auto-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
   }
   .img_info_mobile {
@@ -168,7 +168,20 @@ h2 {
 @media (max-width: 750px) {
   .section-info {
     display: grid;
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .img_info_mobile {
+    display: block;
+  }
+  .img_info_mobile2 {
+    display: none;
+  }
+}
+@media (max-width: 503px) {
+  .section-info {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .img_info_mobile {
@@ -232,11 +245,30 @@ h2 {
   overflow: hidden;
 }
 
+.img-tour-desktop1 {
+  display: block;
+}
+
 /*media tour*/
 @media (max-width: 1002px) {
   .img-tour-mobile {
     display: block;
     overflow: hidden;
+  }
+  .img-tour-desktop1 {
+    display: block;
+  }
+  .img-tour-desktop {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .img-tour-mobile {
+    display: block;
+    overflow: hidden;
+  }
+  .img-tour-desktop1 {
+    display: none;
   }
   .img-tour-desktop {
     display: none;

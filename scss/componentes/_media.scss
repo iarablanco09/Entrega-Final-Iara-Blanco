@@ -23,8 +23,6 @@
 
 }
 
-
-
 /*media informacion*/
 
 @media(max-width: nth($width,5)){
@@ -54,27 +52,29 @@
 
 }
 .imginicio_mobile{
-    display:nth($dspl, 3);
+    display:none
 }
 
 /*media index*/
-@media(max-width: nth($width,4)){
+@media(max-width:676px){
     section{
         div{
            .imginicio_desktop{
-             display:nth($dspl, 3);
+             display: none;
             }
             .imginicio_mobile{
-                display:nth($dspl, 4);
+                display: block;
             }
         
         }
     }
 }
+
+
 @media(max-width:nth($width,6)){
     .section-info{
         display: nth($dspl, 2);
-        @include gridcolrow(1fr, 1fr 1fr 1fr 1fr);
+        @include gridcolrow(1fr 1fr , 1fr 1fr );
     }
     .img_info_mobile{
         display:nth($dspl, 4);
@@ -84,7 +84,19 @@
     }
 
 }
+@media(max-width:nth($width,7)){
+    .section-info{
+        display: nth($dspl, 2);
+        @include gridcolrow(1fr , 1fr 1fr 1fr 1fr );
+    }
+    .img_info_mobile{
+        display:nth($dspl, 4);
+    }
+    .img_info_mobile2{
+        display:nth($dspl, 3) ;
+    }
 
+}
 .iframe_disc_desktop{
     display: nth($dspl, 1 );
     justify-content:nth($just, 2);
@@ -139,14 +151,32 @@
     display: nth($dspl,4);
     overflow:$over;
 }
-
+.img-tour-desktop1{
+    display: nth($dspl,4);
+}
 /*media tour*/
 @media(max-width: nth($width,9)){
     .img-tour-mobile{
         display: nth($dspl,4);
         overflow:$over;
     }
+    .img-tour-desktop1{
+        display: nth($dspl,4);
+    }
     .img-tour-desktop{
         display: nth($dspl,3);
     }
 }
+@media(max-width: nth($width,6)){
+    .img-tour-mobile{
+        display: nth($dspl,4);
+        overflow:$over;
+    }
+    .img-tour-desktop1{
+        display: nth($dspl,3);
+    }
+    .img-tour-desktop{
+        display: nth($dspl,3);
+    }
+}
+ 
