@@ -10,7 +10,7 @@
     width: nth($width,1);
     display:nth($dspl, 1);
     align-items:$algitms;
-    justify-content:$just;
+    justify-content:nth($just, 1 );
     overflow: $over;
     padding-bottom: nth($botpadd, 3 );
 }

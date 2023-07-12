@@ -175,7 +175,7 @@ section{
     display: block;
 }
 .img-tour-desktop{
-    display: none;
+    /* display: none; */
 }
 
 /*media informacion*/

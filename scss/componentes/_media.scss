@@ -23,32 +23,7 @@
 
 }
 
-.section-index{
-    width: nth($width,1);
-    display: nth($dspl, 1);
-    align-items:$algitms;
-    justify-content:nth($just, 1 );
-    overflow: $over;
-    padding-bottom: nth($botpadd, 3 );
-}
-.imginicio_mobile{
-    display:nth($dspl, 3);
-}
 
-/*media index*/
-@media(max-width:nth($width,4)){
-    section{
-        div{
-           .imginicio_desktop{
-             display:nth($dspl, 3);
-            }
-            .imginicio_mobile{
-                display:nth($dspl, 4);
-            }
-        
-        }
-    }
-}
 
 /*media informacion*/
 
@@ -78,7 +53,25 @@
     }
 
 }
-@media(max-width:nth($width,7)){
+.imginicio_mobile{
+    display:nth($dspl, 3);
+}
+
+/*media index*/
+@media(max-width: nth($width,4)){
+    section{
+        div{
+           .imginicio_desktop{
+             display:nth($dspl, 3);
+            }
+            .imginicio_mobile{
+                display:nth($dspl, 4);
+            }
+        
+        }
+    }
+}
+@media(max-width:nth($width,6)){
     .section-info{
         display: nth($dspl, 2);
         @include gridcolrow(1fr, 1fr 1fr 1fr 1fr);
@@ -98,6 +91,7 @@
     flex-wrap: $flxwrp;
     align-items:$algitms;
 }
+
 
 /*media discografia*/
 @media(max-width:nth($width, 8)){
@@ -131,29 +125,22 @@
 .p_tour{
     padding-bottom: nth($botpadd, 1);
 }
+
 .img_tour{
-    display: nth($dspl, 1 );
-    justify-content:nth($just, 2 );
+    display: nth($dspl, 1);
+    justify-content:nth($just,2 );
     align-items: $algitms;
-    padding-bottom: nth($botpadd, 2 );
-    column-gap: nth($colgp,3);
-    overflow:$over;
+    padding-bottom: nth($botpadd, 2);
 }
-.img-tour-desk{
-    display: nth($dspl, 4 );
-}
-.img-tour-mobile{
-    display: nth($dspl, 4);
-}
-@media(max-width:nth($width,11)){
+
+/*media tour*/
+@media(max-width: nth($width,9)){
+   
     .img-tour-mobile{
-     display: nth($dspl, 4);
+        display: nth($dspl,4);
+        overflow:$over;
     }
-    .img-tour-desk{
-     display:nth($dspl, 3 );
+    .img-tour-desktop{
+        display:  nth($dspl,3);
     }
-    
-        
-
 }
-
