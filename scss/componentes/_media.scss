@@ -132,15 +132,21 @@
     align-items: $algitms;
     padding-bottom: nth($botpadd, 2);
 }
+.img-tour-desktop{
+    display:  nth($dspl,4);
+}
+.img-tour-mobile{
+    display: nth($dspl,4);
+    overflow:$over;
+}
 
 /*media tour*/
 @media(max-width: nth($width,9)){
-   
     .img-tour-mobile{
         display: nth($dspl,4);
         overflow:$over;
     }
     .img-tour-desktop{
-        display:  nth($dspl,3);
+        display: nth($dspl,3);
     }
 }

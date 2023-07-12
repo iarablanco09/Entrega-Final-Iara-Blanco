@@ -223,8 +223,17 @@ h2 {
   padding-bottom: 10px;
 }
 
+.img-tour-desktop {
+  display: block;
+}
+
+.img-tour-mobile {
+  display: block;
+  overflow: hidden;
+}
+
 /*media tour*/
-@media (max-width: 800px) {
+@media (max-width: 1002px) {
   .img-tour-mobile {
     display: block;
     overflow: hidden;
