@@ -3,7 +3,7 @@
     row-gap: $rowgap;  
     column-gap: nth($colgp, 2); 
     overflow:$over;
-    padding-bottom:nth($botpadd, 2);
+    padding-bottom:nth($padd, 2);
     @extend %grid;
  }
 .section-index{
@@ -12,5 +12,8 @@
     align-items:$algitms;
     justify-content:nth($just, 1 );
     overflow: $over;
-    padding-bottom: nth($botpadd, 3 );
+    padding-bottom: nth($padd, 3 );
+}
+.section-film{
+    padding-top: nth($padd, 1);
 }

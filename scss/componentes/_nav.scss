@@ -1,9 +1,9 @@
 .navheader{
     display: nth($dspl, 1);
     text-align: $txtali;
-    justify-content:nth($just, 3);
+    justify-content:nth($just,2);
     align-items:$algitms;
     font-family:nth($fontfam,2);
-    font-weight:nth($fontw,2 );
-    
+    font-weight:nth($fontw,3 );
 }
+

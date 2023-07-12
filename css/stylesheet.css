@@ -36,7 +36,7 @@ header {
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 15px, 10px, 20px;
   text-decoration: none;
   list-style-type: none;
 }
@@ -94,13 +94,17 @@ h2 {
   padding-bottom: 20px;
 }
 
+.section-film {
+  padding-top: 15px;
+}
+
 .navheader {
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-family: "Lora" serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .img_film {
@@ -121,10 +125,18 @@ h2 {
   .link_film2 {
     display: block;
   }
-  .portada_film {
+}
+@media (max-width: 350px) {
+  .link_film2 {
+    display: none;
+  }
+  .link_film {
     display: block;
-    height: 200px;
-    width: 150px;
+  }
+  .img_film {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
   }
 }
 /*media informacion*/
@@ -196,15 +208,37 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  row-gap: 5px;
+}
+
+.iframe_disc_desktop2 {
+  display: none;
 }
 
 /*media discografia*/
 @media (max-width: 1050px) {
   .iframe_disc_desktop {
     justify-content: center;
-    column-gap: 5px, 2px, 10px;
+    column-gap: 10px;
     flex-wrap: wrap;
     align-items: center;
+  }
+}
+@media (max-width: 676px) {
+  .iframe_disc_desktop {
+    display: none;
+  }
+  .iframe_disc_desktop2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    row-gap: 5px;
   }
 }
 .link_film2 {
@@ -226,7 +260,7 @@ h2 {
   }
 }
 .p_tour {
-  padding-bottom: 15px;
+  padding-bottom: 0;
 }
 
 .img_tour {
