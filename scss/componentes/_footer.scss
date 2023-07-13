@@ -4,9 +4,10 @@ footer{
     justify-content: map-get($footer-general, justcn);
     background-color: map-get($footer-general, bgclr);
     padding-bottom: map-get($footer-general, pdbott);
+    padding-top: map-get($footer-general, pdtop );
     .p_footer{
-        font-family: nth($fontfam,2);
-        font-weight: nth($fontw, 3);
+        font-family:nth($fontfam,1);
+        font-weight:nth($fontw,3);
     }
     
     @media(max-width: nth($width,10)){
