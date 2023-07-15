@@ -1,11 +1,12 @@
 *{
     margin: $mrg;
-    padding: $padd;
+    padding: $padd_p;
     text-decoration: $txtdec;
     list-style-type: $listtp; 
     &::selection {
     background-color: nth($color,3);
     color: nth($color, 1);
+    overflow: $over;
 }
 }
 main, section{
@@ -18,8 +19,11 @@ p{
     display:nth($dspl, 1);
     text-align:$txtali;
     font-family:nth($fontfam, 1);
-    font-weight:nth($fontw, 1);
+    font-weight:nth($fontw, 2);
     font-size:$fonts;
+    padding-left: nth($padd, 5);
+    padding-right: nth($padd, 5 );
+
 }
 h1{
     color:nth($color, 2);

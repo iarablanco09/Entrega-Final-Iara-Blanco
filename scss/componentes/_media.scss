@@ -3,6 +3,8 @@
     @include gridcolrow(2fr 2fr, 2fr);
     overflow: $over;
     @extend %grid;
+    padding-bottom: nth($padd, 4);
+    padding-top: nth($padd, 2 );
 } 
 .link_film2{
     display: nth($dspl, 3 );
@@ -171,7 +173,8 @@
     display: nth($dspl, 1);
     justify-content:nth($just,2 );
     align-items: $algitms;
-    padding-bottom: nth($padd, 2);
+    padding-bottom: nth($padd, 4);
+    padding-top: nth($padd, 2 );
 }
 .img-tour-desktop{
     display:  nth($dspl,4);
