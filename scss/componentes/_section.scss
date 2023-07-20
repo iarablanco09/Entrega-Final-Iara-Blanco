@@ -15,5 +15,11 @@
     padding-bottom: nth($padd, 3 );
 }
 .section-film{
-    padding-top: nth($padd, 1);
-}
+    padding-bottom: nth($padd, 1);}
+
+.formulario{
+    display: nth($dspl, 1 );
+    align-items: $algitms;
+    justify-content: nth($just, 1 );
+
+}    

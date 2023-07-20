@@ -99,7 +99,13 @@ h2 {
 }
 
 .section-film {
-  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navheader {
@@ -115,8 +121,8 @@ h2 {
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 2fr;
   overflow: hidden;
-  padding-bottom: 40px;
-  padding-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .link_film2 {
