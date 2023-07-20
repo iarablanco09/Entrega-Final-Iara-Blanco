@@ -13,7 +13,7 @@ footer {
   padding-top: 15px;
 }
 footer .p_footer {
-  font-family: "Inter" sans-serif;
+  font-family: "Inter";
   font-weight: 600;
 }
 @media (max-width: 332px) {
@@ -58,7 +58,7 @@ a, p, ul {
 p {
   display: flex;
   text-align: center;
-  font-family: "Inter" sans-serif;
+  font-family: "Inter";
   font-weight: 400;
   font-size: large;
   padding-left: 80px;
@@ -68,7 +68,7 @@ p {
 h1 {
   color: aliceblue;
   text-align: center;
-  font-family: "Lora" serif;
+  font-family: "Lora";
   font-weight: 600;
 }
 
@@ -76,7 +76,7 @@ h2 {
   display: flex;
   justify-content: center;
   color: aliceblue;
-  font-family: "Lora" serif;
+  font-family: "Lora";
   font-weight: 400;
 }
 
@@ -107,7 +107,7 @@ h2 {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  font-family: "Lora" serif;
+  font-family: "Lora";
   font-weight: 600;
 }
 

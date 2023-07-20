@@ -18,7 +18,7 @@ a,p,ul{
 p{
     display:nth($dspl, 1);
     text-align:$txtali;
-    font-family:nth($fontfam, 1);
+    font-family: nth($fontfam, 1 );
     font-weight:nth($fontw, 2);
     font-size:$fonts;
     padding-left: nth($padd, 5);
