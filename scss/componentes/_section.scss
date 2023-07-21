@@ -11,8 +11,10 @@
     display:nth($dspl, 1);
     align-items:$algitms;
     justify-content:nth($just, 1 );
+    padding-bottom: nth($padd, 3);
+    padding-top: nth($padd, 3);
     overflow: $over;
-    padding-bottom: nth($padd, 3 );
+   
 }
 .section-film{
     padding-bottom: nth($padd, 1);}
