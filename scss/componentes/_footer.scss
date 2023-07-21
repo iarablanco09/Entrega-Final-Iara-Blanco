@@ -13,7 +13,7 @@ footer{
     @media(max-width: nth($width,10)){
     .div-footer{
      display:nth($dspl,2) ;
-     @include gridcolrow( 1fr 1fr, 1fr 1fr);
+     @include gridcolrow( 1fr 1fr ,1fr 1fr);
      row-gap:$rowgap;
      justify-items:nth($just,1);
      align-items: $algitms;}
