@@ -20,6 +20,16 @@
 .formulario{
     display: nth($dspl, 1 );
     align-items: $algitms;
-    justify-content: nth($just, 1 );
+    justify-content: nth($just, 1);
+    color: nth($color,2 );
+    font-family: nth($fontfam, 2)
+}
+.formp{
+    align-items: $algitms;
+    justify-content: nth($just, 1);
+    color: nth($color,2 );
+    font-family: nth($fontfam, 2);
+    padding-bottom: nth($padd, 3);
+}
 
-}    
+

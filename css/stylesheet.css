@@ -106,6 +106,16 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: aliceblue;
+  font-family: "Lora";
+}
+
+.formp {
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: "Lora";
+  padding-bottom: 20px;
 }
 
 .navheader {
